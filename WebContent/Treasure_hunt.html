@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>siga4jo - Map</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<link rel="shortcut icon" href="images/favicon.png">
+<body>
+    <div id="wrap">
+         <div id="header_img">
+            <div id="header_box">
+            	<div id="header_text">
+            			Treasure hunt
+            	</div>
+            </div>
+         </div>
+
+	<!-- 링크 넣기 -->
+		<div id="mySidenav" class="sidenav">
+		  <a href="index.html" id="Home">홈　　⭐ </a>
+		  <a href="Treasure_hunt.html" id="Map">보물　⭐</a>
+		  <a href="Shape.html" id="Shape">모양　⭐</a>
+		  <a href="Intro.html" id="Intro">소개　⭐</a>
+		</div>
+
+
+		<div id="content">
+            <div id="content_box">
+            	<div class=space1>
+            		<div id="result" class="button-map"></div>
+            	</div>
+				<div id="map" style="width: 1000px; height: 600px;"></div>
+				<div class=space2>
+					<div class="button-map" onclick="hideMarkers()">마커 감추기</div>
+					<div class="button-map" onclick="showMarkers()">마커 보이기</div>
+				</div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="contaniner">CopyRight © SA-JO. ALL RIGHTS RESERVED.</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript"
+	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=786a0daa7ebe87d60205e88624e8d04b"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript" src="script/map.js"></script>
+</html>

@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Hi+Melody&family=Pacifico&display=swap');
+
+/* SweetAlert 오버레이 */
+.swal-overlay {
+ background-color: rgba(43, 165, 137, 0.45);
+}
+
+
+/*---------All contents---------*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Hi Melody', cursive;
+}
+
+#wrap {
+	text-align: center;
+	color: #f2f2f2;
+}
+
+/* 헤더 */
+#header_img {
+	margin: 0 auto;
+	height: 300px;
+	background: rgba(0, 0, 0, 0.3);
+	background-image: url("	../images/main03.jpeg");
+	background-size: 100% 100%;
+}
+
+#header_box {
+	position: absolute;
+	width: 1000px;
+	height: inherit;
+	background: rgba(0, 0, 0, 0.5);
+	mix-blend-mode: normal;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	position: relative;
+}
+
+#header_text {
+	position: absolute;
+	width: 1000px;
+	height: inherit;
+	font-family: Pacifico;
+	font-size: 70px;
+	line-height: 300px;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* 컨텐츠 영역 */
+#content {
+	height: 800px;
+	line-height: 800px;
+	background: white;
+}
+
+#content_box {
+	position: absolute;
+	width: 1000px;
+	height: inherit;
+	margin: 0 auto;
+	position: relative;
+	background: #EEE;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* 푸터영역 */
+#footer {
+	height: 220px;
+	line-height: 220px;
+	background: black;
+	font-size: 15px;
+	color: #f2f2f2;
+}
+
+.contaniner {
+	width: 1000px;
+	margin: 0 auto;
+	height: inherit;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+/*---------side_nav---------*/
+#mySidenav a {
+	position: absolute;
+	left: -80px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Do Hyeon', sans-serif;
+	color: white;
+	border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+	left: 0;
+}
+
+#Home {
+	top: 400px;
+	background-color: black;
+}
+
+#Shape {
+	top: 500px;
+	background-color: #00264d;
+}
+
+#Map {
+	top: 560px;
+	background-color: #00264d;
+}
+
+#Intro {
+	top: 620px;
+	background-color: #00264d;
+}
+
+/*---------Drag&Drop---------*/
+.BBWrap {
+	top: 500px;
+	font-family: 'Hi Melody', cursive;
+	background-color: #eee;
+	color: #111;
+	box-sizing: border-box;
+}
+.intro {
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.5rem;
+	font: bold;
+	margin: 0rem 0.5rem;
+	cursor: move;
+	transition: opacity 0.2s;
+	border-radius: 20px;
+}
+.space {
+	height:181px;
+}
+.draggable-elements {
+	display: flex;
+	justify-content: center;
+	margin: 2rem;
+	border-radius: 20px;
+}
+.draggable {
+	height: 5rem;
+	width: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.5rem;
+	margin: 0rem 0.5rem;
+	cursor: move;
+	transition: opacity 0.2s;
+	border-radius: 20px;
+}
+.draggable:hover {
+	opacity: 0.01;
+	border-radius: 20px;
+}
+.droppable {
+	border-radius: 20px;
+	height: 6.5rem; /*  */
+	width: 6.5rem; /*  */
+	margin: 3rem; /*  */
+	display: flex; /*  */
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	text-align: center; /*  */
+	font-size: 3rem; /*  */
+	font-weight: bold; /*  */
+	background-color: #fff; /*  */
+	border-style: none;
+	transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+	/*  */
+}
+.droppable span {
+	font-size: 2.5rem;
+	opacity: 0.5;
+	pointer-events: none;
+	/* The element is never the target of pointer events */
+}
+/* Drag and Drop Related Styling */
+.droppable.droppable-hover {
+	/* background-color: #bee3f0; */
+	border-width: 5px;
+	transform: scale(1.1);
+}
+.droppable.dropped {
+	border-style: none;
+	color: #fff;
+}
+.droppable.dropped span {
+	font-size: 0;
+	margin-top: 0.01rem;
+}
+.droppable.dropped i {
+	pointer-events: none;
+}
+.draggable.dragged {
+	user-select: none;
+	opacity: 0.1;
+	cursor: default;
+}
+.draggable.dragged:hover {
+	opacity: 0.1;
+}
+@media ( max-width : 600px) {
+	html {
+		font-size: 14px;
+	}
+	.draggable-elements {
+		margin: 1.5rem;
+	}
+}
+
+
+/*---------MAP---------*/
+.div-distance-info {
+	padding: 5px;
+	height: 30px; 
+	line-height: 30px;
+	color: black;
+	word-break:break-all;
+	text-align: center;
+}
+.button-map {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid gray;
+	text-align: center;
+	margin: 5px;
+	color: black;
+	background-color: #D5D5D5;
+}
+
+.space1, .space2  {
+	height:100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.swal-text {
+ display: block;
+ text-align: center;
+}
+

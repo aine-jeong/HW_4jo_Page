@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>siga4jo-Introduce</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/intro.css">
+    
+    <script src="script/intro.js?ver=1" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<link rel="shortcut icon" href="images/favicon.png">
+<body>
+    <div id="wrap">
+         <div id="header_img">
+            <div id="header_box">
+            	<div id="header_text">
+            			Introduce
+            	</div>
+            </div>
+         </div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html" id="Home">홈　　⭐ </a>
+</div>
+
+
+<div id="content">
+	<div id="content_box">
+		<div class="space"></div>
+		<section class="draggable-elements">
+			<img id="mhc" src="images/mhc.png" draggable="true" ondragstart="drag(event)" >
+			<img id="bsh" src="images/bsh.png" draggable="true" ondragstart="drag(event)" >
+			<img id="bbs" src="images/bbs.png" draggable="true" ondragstart="drag(event)" >
+			<img id="ain" src="images/ain.png" draggable="true" ondragstart="drag(event)" >
+			<img id="hjs" src="images/hjs.png" draggable="true" ondragstart="drag(event)" >
+		</section>
+		<section class="droppable-elements">
+			<div id="here" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<span>미모지를 Drag and Drop!</span>
+			</div>
+		</section>
+	</div>
+</div>
+
+	<div id="footer">
+            <div class="contaniner">CopyRight © SA-JO. ALL RIGHTS RESERVED.</div>
+        </div>
+    </div>
+</body>
+</html>

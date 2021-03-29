@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Hi+Melody&family=Pacifico&display=swap');
+
+/* SweetAlert 오버레이 */
+.swal-overlay {
+ background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* SweetAlert 글씨체 */
+.swal-text {
+ display: block;
+ text-align: center;
+ font-family: 'Do Hyeon', sans-serif;
+ font-size: 20px;
+}
+
+
+/*---------All contents---------*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Hi Melody', cursive;
+}
+
+#wrap {
+	text-align: center;
+	color: #f2f2f2;
+}
+
+#header_img {
+	margin: 0 auto;
+	height: 300px;
+	background: rgba(0, 0, 0, 0.3);
+	background-image: url("	../images/main03.jpeg");
+	background-size: 100% 100%;
+}
+
+#header_box {
+	position: absolute;
+	width: 1000px;
+	height: inherit;
+	background: rgba(0, 0, 0, 0.5);
+	mix-blend-mode: normal;
+	/* opacity: 0.6; */
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	position: relative;
+}
+
+#header_text {
+	position: absolute;
+	width: 1000px;
+	height: inherit;
+	font-family: Pacifico;
+	font-size: 70px;
+	line-height: 300px;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#content {
+	height: 800px;
+	line-height: 800px;
+	background: white;
+}
+
+#content_box {
+	position: absolute;
+	width: 1000px;
+	height: inherit;
+	margin: 0 auto;
+	position: relative;
+	background-image: url("	../images/back05.jpg");
+	background-size: auto;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+#footer {
+	height: 220px;
+	line-height: 220px;
+	background: black;
+	font-size: 15px;
+	color: #f2f2f2;
+}
+
+.contaniner {
+	width: 1000px;
+	margin: 0 auto;
+	height: inherit;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+/*---------side_nav---------*/
+#mySidenav a {
+	position: absolute;
+	left: -80px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Do Hyeon', sans-serif;
+	color: white;
+	border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+	left: 0;
+}
+
+#Home {
+	top: 400px;
+	background-color: black;
+}
+
+#Shape {
+	top: 500px;
+	background-color: #00264d;
+}
+
+#Map {
+	top: 560px;
+	background-color: #00264d;
+}
+
+#Intro {
+	top: 620px;
+	background-color: #00264d;
+}
+
+
+/* contents */
+
+/* 컨텐츠박스 위 여백공간 */
+.space {
+	height:170px;
+}
+
+/* 미모지 위치 세팅 */
+.draggable-elements {
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+	flex-wrap: wrap;
+	
+	margin: 10px;
+}
+
+/* 미모지 사이즈 세팅 (img의 src 중 png로 끝나는 것들에 속성 추가) */
+img[src$="png"] {
+	width: 170px;
+    height: 170px;
+}
+
+/* 사이즈 조정 */
+#bsh {
+	width: 150px;
+	height: 150px;
+}
+
+/* 드랍박스 디자인 */
+#here {
+    width: 250px;
+    height: 250px;
+    border: 2px dotted black;
+    
+    margin: 60px auto;
+
+    text-align: center;
+    line-height: 250px;
+    font-size: 20px;
+    color: black;
+}

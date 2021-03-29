@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>siga4jo - Drag n Drop</title>
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <script src="script/shape2.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header_img">
+			<div id="header_box">
+				<div id="header_text">Picture Game</div>
+			</div>
+		</div>
+		
+		<!-- 링크 넣기 -->
+		<div id="mySidenav" class="sidenav">
+			<a href="index.html" id="Home">홈 ⭐ </a> 
+			<a href="Treasure_hunt.html" id="Map">보물 ⭐</a> 
+			<a href="Shape.html" id="Shape">모양 ⭐</a> 
+			<a href="Intro.html" id="Intro">소개 ⭐</a>
+		</div>
+		<div id="content">
+			<div id="content_box">
+				<div class="BBWrap">
+					<div class="space"></div>
+					<section class="draggable-elements">
+						<i class="fas fa-circle draggable" draggable="true"
+							style="color: #ff6384; border: solid;" id="circle"></i> 
+							<i class="fas fa-heart draggable" draggable="true"
+							style="color: #65D35D; border: solid;" id="heart"></i> 
+							<i class="fas fa-moon draggable" draggable="true"
+							style="color: #FFFF48; border: solid;" id="moon"></i> 
+							<i class="fas fa-star draggable" draggable="true"
+							style="color: #9966ff; border: solid;" id="star"></i> 
+							<i class="fas fa-cloud draggable" draggable="true"
+							style="color: #4bc0c0; border: solid;" id="cloud"></i>
+					</section>
+					<section class="droppable-elements"
+						style="display: flex; justify-content: center;">
+						<div class="droppable" data-draggable-id="circle"
+							style="margin: 1rem;">
+							<span>Circle</span>
+						</div>
+						<div class="droppable" data-draggable-id="square"
+							style="margin: 1rem;">
+							<span>Square</span>
+						</div>
+						<div class="droppable" data-draggable-id="cloud"
+							style="margin: 1rem;">
+							<span>Cloud</span>
+						</div>
+						<div class="droppable" data-draggable-id="star"
+							style="margin: 1rem;">
+							<span>Star</span>
+						</div>
+						<div class="droppable" data-draggable-id="heart"
+							style="margin: 1rem;">
+							<span>Heart</span>
+						</div>
+					</section>
+					<section class="draggable-elements">
+						<i class="fas fa-gem draggable" draggable="true"
+							style="color: #36a2eb; border: solid;" id="gem"></i> 
+							<i class="fas fa-envelope draggable" draggable="true"
+							style="color: #5CD1E5; border: solid;" id="letter"></i> 
+							<i class="fas fa-bell draggable" draggable="true"
+							style="color: #ffce56; border: solid;" id="bell"></i> 
+							<i class="fas fa-bus draggable" draggable="true"
+							style="color: #FFBA85; border: solid;" id="bus"></i> 
+							<i class="fas fa-square draggable" draggable="true"
+							style="color: #9CAF72; border: solid;" id="square"></i>
+					</section>
+					<div class="space"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div class="contaniner">CopyRight © SA-JO. ALL RIGHTS RESERVED.</div>
+		</div>
+	</div>
+</body>
+</html>
