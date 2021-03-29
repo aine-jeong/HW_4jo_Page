@@ -37,21 +37,21 @@ function drop(e) {
 
 // 해당 미모지가 드랍박스에 드랍될 때 띄울 SweetAlert실행
 function mhc() {
-    location.href="http://192.168.0.62:8090/Hw02/index.html";
+    location.href="https://moonhyungcheol.github.io/-introduce/";
 }
 
 function bsh() {
-    location.href="http://192.168.0.58:8080/BootStrap/index.html";
+    location.href="https://sunhee1021.github.io/self_intro_Bootstrap/WebContent/index.html";
 }
 
 function bbs() {
-    location.href="http://192.168.0.50:8090/MyPage/index.html";
+    location.href="https://bo-like-chicken.github.io/UI/MyPage_bs/WebContent/index.html";
 }
 
 function hjs() {
-    location.href="http://192.168.0.25:8090/Bootstrap/index.html.html";
+    location.href="https://bo-like-chicken.github.io/UI/MyPage_js/index.html.html";
 }
 
 function ain() {
-    location.href="http://192.168.0.54:8090/Hw02_Ain/index.html";
+    location.href="https://bo-like-chicken.github.io/UI/MyPage_bs/WebContent/index.html";
 }
