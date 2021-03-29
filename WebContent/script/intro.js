@@ -53,5 +53,5 @@ function hjs() {
 }
 
 function ain() {
-    location.href="https://bo-like-chicken.github.io/UI/MyPage_bs/WebContent/index.html";
+    location.href="https://aine-jeong.github.io/HW_Boot_AinPage/";
 }
